@@ -1,0 +1,188 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.progressTimeContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+}
+
+
+.videoPlayerContent {
+  position: relative;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  z-index: 2147483647;
+}
+
+.controls  {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  height: 30px;
+  cursor: pointer;
+
+}
+
+
+
+.widthButton {
+  width: 25px;
+}
+
+.volume {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.progressBar {
+  width: 100%;
+}
+
+.progress {
+  width: 0;
+  height: 10px;
+  background-color: lightpink;
+}
+
+.videoPlayer:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-media-controls {
+  display: none !important;
+}
+
+
+.leftControls {
+  display: flex;
+  width: 110px;
+  justify-content: space-around;
+}
+
+.rightControls {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+}
+
+.cheatBar {
+  width: 0;
+  height: 8px;
+  background: linear-gradient(to left, #F95738, #FBB03B);
+  position: absolute;
+  top: 17px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6.2px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(0, 0, 0, 0);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #f95738;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(218, 218, 224, 0.83);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6.2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 7.3px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  background: rgba(204, 204, 212, 0.83);
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(0, 0, 0, 0);
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 13px;
+  width: 13px;
+  border-radius: 1px;
+  background: #f95738;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6.2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: rgba(190, 190, 200, 0.83);
+  border: 0.2px solid rgba(0, 0, 0, 0);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 7.3px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+}
+
+input[type=range]::-ms-fill-upper {
+  background: rgba(204, 204, 212, 0.83);
+  border: 0.2px solid rgba(0, 0, 0, 0);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 7.3px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 13px;
+  width: 13px;
+  border-radius: 1px;
+  background: #f95738;
+  cursor: pointer;
+  height: 6.2px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(204, 204, 212, 0.83);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(218, 218, 224, 0.83);
+}
+
+input.volumeButton {
+  align-self: center;
+  width: 58%;
+}

@@ -1,0 +1,185 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FANATIK</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="stylePlayer.css">
+  <script type="text/javascript" src="vidéos/data.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="navContainer">
+      <nav class="mainNav">
+        <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+        <ul class="navigation">
+          <li><a href="#" class="navElements">MY COLLECTION</a></li>
+          <li><a href="#" class="navElements">UPLOAD</a></li>
+          <li><a href="#" class="navElements">HELP</a></li>
+        </ul>
+      </nav>
+
+      <nav class="secondNav">
+        <div class="recherche">
+          <input class="saisir" type="text" name="" value="Recherche">
+          <a href="#"><img class="rechercheIcon" src="img/loupe.png" alt=""></a>
+        </div>
+        <div class="connection">
+          <a href="#" ><img class="connectIcon" src="img/compte.png" alt=""></a>
+          <a href="#" class="connectionText">MY ACCOUNT</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="recommande">
+    <div class="recommandeContainer">
+      <div class="titleContainer">
+        <h1 class="vidTitle">TIE FIGHTER <br> WAR</h1>
+        <img class="noteStar" src="img/note.png" alt="">
+      </div>
+      <div class="playContainer">
+        <img class="playVid" src="img/play.png" alt="" class="">
+        <a href="" class="playText">Play</a>
+      </div>
+      <div class="descriptionContainer">
+        <h3 class="synopsis"> - SYNOPSIS</h3>
+        <p class="vidDescription">Empire and rebel forces engage in a frantic <br> all-or-nothing dogfight in space, but the Empire has <br> 3 Tie Fighter aces up its sleeve.</p>
+      </div>
+      <div class="scrollContainer">
+        <a class="autoScroll" href="#gotoSectionTitle"><img class="scrollButton" src="img/scroll.png" alt=""></a>
+      </div>
+    </div>
+    <div class="recoVideo">
+      <video class="backVideo" src="vidéos/TIE+Fighter+-+short+film(720p).mp4" autoplay loop muted></video>
+    </div>
+  </section>
+
+  <section class="trending">
+    <h1 class="sectionTitle">TRENDING</h1>
+    <div class="segmentTrending"></div>
+    <div class="trendingContainer">
+
+      <div class="trendingOne">
+        <div class="oneDescription">
+          <h2 class="titleOne">SPAWN : THE RECALL</h2>
+          <p class="textOne">SPAWN : THE RECALL is the story of a former witch <br> and her son, who try to live a normal life away <br> from the darkness.</p>
+          <img src="img/play-button.png" alt="" class="playIcon">
+        </div>
+        <img class="oneM" src="img/SpawnTheRecall.jpg" alt="">
+      </div>
+
+      <div class="trendingTwo">
+        <div class="twoDescription">
+          <h2 class="titleTwo">HEAT VS REPULSION</h2>
+          <p class="textTwo">中国19岁学生制作的个人动画短片《高温vs排斥》，<br> 作者：光学核心(Optical-Core)。概念、动画、背景、<br>合成均由作者个人完成。</p>
+          <img src="img/play-button.png" alt="" class="playIconTwo">
+        </div>
+        <img class="twoM" src="img/chinese.png" alt="">
+      </div>
+
+      <div class="trendingThree">
+        <div class="threeDescription">
+          <h2 class="titleThree">JUSTICE LEAGUE : TRINITY FORCE</h2>
+          <p class="textThree">Four months after an earth shattering event, <br> Broken, The Justice League must put their differences <br> aside to stop The Joker!</p>
+          <img src="img/play-button.png" alt="" class="playIconThree">
+        </div>
+        <img class="threeM" src="img/JusticeLeague.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+<div id="gotoSectionTitle"></div>
+
+  <section class="allMovies">
+    <h1 class="sectionTitle">MOVIES</h1>
+    <div class="segment"></div>
+    <ul class="listGenre">
+      <li class="btnAll" type="button" data-genre="All">All</li>
+      <li class="btnGenre" data-genre="Action">Action</li>
+      <li class="btnGenre" data-genre="Animation">Animation</li>
+      <li class="btnGenre" data-genre="Comedy">Comedy</li>
+      <li class="btnGenre" data-genre="Horror / Thriller">Horror</li>
+    </ul>
+    <div class="segment"></div>
+    <div class="imgMovie">
+
+      <div class="modalMamene">
+        <div class="modal">
+          <div class="overlay"></div>
+          <div class="modalContent">
+            <div class="videoPlayerContent">
+              <div class="videoPlayer"></div>
+
+              <div class="container">
+
+                  <div class="progressTimeContainer">
+                    <span id="progressTime">0:00</span>
+                    <span id="passedTime">0:00</span>
+                  </div>
+
+                  <div class="progressContainer">
+                    <input class="progressBar" type="range">
+                    <div class="cheatBar"></div>
+                  </div>
+
+                  <div class="controls">
+
+
+                    <div class="leftControls">
+                        <div class="playButton"><img class="widthButton" src="Ressources/play.svg"></div>
+                        <div class="stopButton"><img class="widthButton" src="Ressources/stop.svg"></div>
+                    </div>
+
+                    <div class="rightControls">
+                        <div class="volume">
+                          <div class="muteButton"><img class="widthButton" src="Ressources/speaker.svg"></div>
+                          <input class="volumeButton" type="range">
+                          <img class="widthButton fullScreen" src="Ressources/fullScreen.svg">
+                        </div>
+                    </div>
+                  </div>
+
+               </div>
+
+            </div>
+              <div class="content"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footerContainer">
+      <div class="footerElements">
+        <ul class="footerText">
+          <li><a href="" class="footerLinks">ABOUT</a></li>
+          <li><a href="" class="footerLinks">PARTNERS</a></li>
+          <li><a href="" class="footerLinks">CONTACT</a></li>
+        </ul>
+        <ul class="footerSocial">
+          <li><a href="" class="footerIcons"><img  class="footerSocialIcon" src="img/facebook.png" alt=""></a></li>
+          <li><a href="" class="footerIcons"><img  class="footerSocialIcon" src="img/twitter.png" alt=""></a></li>
+          <li><a href="" class="footerIcons"><img  class="footerSocialIcon" src="img/insta.png" alt=""></a></li>
+        </ul>
+      </div>
+      <h3 class="copyright">©Copyright 2017 FANATIK</h3>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="mainScript.js"></script>
+  <script type="text/javascript" src="videoplayer.js"></script>
+
+</body>
+
+</html>
