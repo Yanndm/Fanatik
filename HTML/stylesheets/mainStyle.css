@@ -1,13 +1,51 @@
 body {
   background-color: #0F0F21;
+  width: 100%;
 }
+
+
+/*MAJ*/
+
+.rebuild{
+  width: 100%;
+  height: 100vh;
+  background-color:  #0F0F21;
+  position: fixed;
+  z-index: 200000000;
+}
+
+.rebuild_img{
+  margin-top: 200px;
+  margin-left: 30%;
+  width: 700px;
+  height: 110px;
+}
+
+.rebuild_text{
+  margin-top: 150px;
+  color: #FFFFFF;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-left: 39%;
+}
+
+.rebuild_bar{
+  margin-top: 10px;
+  margin-left: 36%;
+  height: 4px;
+  width: 445px;
+  background-color: #F95738;
+}
+
+/*MAJ END*/
 
 .navContainer {
   background-color: #0F0F21;
   display: flex;
   justify-content: space-between;
   height: 65px;
-  width: 1440px;
+  width: 100%;
   position: fixed;
   z-index: 9;
 }
@@ -99,7 +137,7 @@ body {
 }
 
 .recommandeContainer {
-  width: 1440px;
+  width: 100%;
   color: #F95738;
   font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
   font-weight: 900;
@@ -110,7 +148,7 @@ body {
 
 
 .backVideo {
-  width: 1440px;
+  width: 100%;
   z-index: 1;
 }
 
@@ -194,8 +232,7 @@ body {
 }
 
 .scrollContainer {
-margin-top: 150px;
-margin-left: 669px;
+margin: 270px 0 0 790px;
 }
 
 .CategoriesText{
@@ -218,8 +255,8 @@ margin-left: 669px;
 
 .trendingContainer{
   margin-top: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 270px;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -406,11 +443,11 @@ margin-left: 669px;
 .segmentTrending{
   margin-top: 40px;
   width: 1000;
-  margin-left: auto;
-  margin-right: auto;
+  margin: O auto;
+  margin-left: 330px;
   height: 3px;
   background: #F95738;
-  margin-left: 230px;
+
 }
 
 /*MOVIIES*/
@@ -431,6 +468,7 @@ margin-left: 669px;
   font-weight: lighter;
   text-transform: uppercase;
   margin-top: 50px;
+  margin-left: 130px;
 
 }
 
@@ -483,8 +521,7 @@ margin-left: 669px;
 .imgMovie {
   width: 1152px;
   margin-top: 70px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
   margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -679,7 +716,7 @@ margin-top: 25px;
 .footerText{
   display: flex;
   margin-top: 50px;
-  margin-left: 130px;
+  margin-left: 250px;
 }
 
 .footerLinks{
@@ -693,7 +730,7 @@ margin-top: 25px;
 
 .footerLinks:hover{
   color: #911A0D;
-  font-size: 40px;
+
 }
 
 .footerSocial{
@@ -708,18 +745,13 @@ margin-top: 25px;
   transition: width 0.5s, height 0.5s;
 }
 
-.footerIcons:hover .footerSocialIcon{
-  width: 40px;
-  height: 40px;
-}
-
 .copyright{
   color: #F95738;
   font-family: 'Tw Cen MT', sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
   margin-top: 55px;
-  margin-left: 630px;
+  margin-left: 750px;
   position: absolute;
 }
 .content{
